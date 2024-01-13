@@ -1,0 +1,29 @@
+const sdk = require("api")("@prodia/v1.3.0#1jrnd16lrb6b1qn");
+sdk.auth("cff4ace1-210f-4528-a878-5aa21cef9f05");
+
+exports.generateImage = async (req, res) => {
+  const {prompUser} =  req.body
+  try {
+    const { data } = await sdk.generate({
+      prompt: prompUser
+    });
+    const img = await retrieveGeneration(data.job);
+    res.status(200).json({ state: true, data: img });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ state: false, error: err.message });
+  }
+};
+
+const retrieveGeneration = (job) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(async () => {
+      try {
+        const { data } = await sdk.getJob({ jobId: job });
+        resolve(data); // Resolves with the data received from the job
+      } catch (err) {
+        reject(err); // Rejects with the error if there is any
+      }
+    }, 8000); // Wait for 5 seconds
+  });
+};
