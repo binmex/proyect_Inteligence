@@ -5,7 +5,10 @@ exports.generateImage = async (req, res) => {
   const {prompUser} =  req.body
   try {
     const { data } = await sdk.generate({
-      prompt: prompUser
+      style_preset: '3d-model',
+      prompt: prompUser,
+      model: 'Realistic_Vision_V5.0.safetensors [614d1063]'
+      //upscale: true, aspect_ratio: 'landscape'
     });
     const img = await retrieveGeneration(data.job);
     res.status(200).json({ state: true, data: img });
@@ -20,10 +23,10 @@ const retrieveGeneration = (job) => {
     setTimeout(async () => {
       try {
         const { data } = await sdk.getJob({ jobId: job });
-        resolve(data); // Resolves with the data received from the job
+        resolve(data);
       } catch (err) {
-        reject(err); // Rejects with the error if there is any
+        reject(err);
       }
-    }, 8000); // Wait for 5 seconds
+    }, 8000);
   });
 };
