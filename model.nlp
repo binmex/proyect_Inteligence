@@ -1,0 +1,188 @@
+{
+  "settings": {
+    "languages": [
+      "es"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "es"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "es": {
+        "settings": {
+          "locale": "es",
+          "trainByDomain": false,
+          "tag": "domain-manager-es",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {},
+        "intentDict": {},
+        "sentences": [],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "es",
+              "tag": "nlu-es",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {},
+            "intents": {},
+            "intentFeatures": {},
+            "featuresToIntent": {},
+            "neuralNetwork": {
+              "settings": {
+                "locale": "es",
+                "tag": "nlu-es",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": []
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {
+      "es": {
+        "tamaño": {
+          "name": "tamaño",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "grande",
+              "texts": [
+                "tamaño"
+              ]
+            },
+            {
+              "option": "pequeña",
+              "texts": [
+                "tamaño"
+              ]
+            }
+          ]
+        },
+        "objeto": {
+          "name": "objeto",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "silla",
+              "texts": [
+                "objeto"
+              ]
+            },
+            {
+              "option": "mesa",
+              "texts": [
+                "objeto"
+              ]
+            }
+          ]
+        },
+        "color": {
+          "name": "color",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "rojo",
+              "texts": [
+                "color"
+              ]
+            },
+            {
+              "option": "azul",
+              "texts": [
+                "color"
+              ]
+            }
+          ]
+        }
+      },
+      "tamaño": {
+        "entre": {
+          "name": "entre",
+          "type": "trim",
+          "rules": [
+            {
+              "type": "between",
+              "leftWords": [
+                "y"
+              ],
+              "rightWords": [
+                null
+              ],
+              "regex": "/(?<= y )(.*)(?= undefined )/gi",
+              "options": {}
+            }
+          ]
+        }
+      },
+      "color": {
+        "de": {
+          "name": "de",
+          "type": "trim",
+          "rules": [
+            {
+              "type": "after",
+              "words": [
+                null
+              ],
+              "options": {}
+            }
+          ]
+        }
+      }
+    }
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {}
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

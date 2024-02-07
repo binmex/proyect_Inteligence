@@ -15,6 +15,7 @@ app.use(cors())
 //rutas
 app.use("/colormind",require("./routes/colormind"))
 app.use("/prodia",require("./routes/prodia"))
+app.use('/nlp', require('./routes/nlp'))
 
 
 app.listen(app.get("PORT"),()=>{
