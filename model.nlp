@@ -81,50 +81,438 @@
     },
     "rules": {
       "es": {
-        "tamaño": {
-          "name": "tamaño",
+        "dormitorio": {
+          "name": "dormitorio",
           "type": "enum",
           "rules": [
             {
-              "option": "grande",
+              "option": "individual",
               "texts": [
-                "tamaño"
+                "cama"
               ]
             },
             {
-              "option": "pequeña",
+              "option": "doble",
               "texts": [
-                "tamaño"
-              ]
-            }
-          ]
-        },
-        "objeto": {
-          "name": "objeto",
-          "type": "enum",
-          "rules": [
-            {
-              "option": "silla",
-              "texts": [
-                "objeto"
+                "cama"
               ]
             },
             {
-              "option": "mesa",
+              "option": "nido",
               "texts": [
-                "objeto"
+                "cama"
               ]
-            }
-          ]
-        },
-        "color": {
-          "name": "color",
-          "type": "enum",
-          "rules": [
+            },
             {
-              "option": "rojo",
+              "option": "litera",
               "texts": [
-                "color"
+                "cama"
+              ]
+            },
+            {
+              "option": "sofá",
+              "texts": [
+                "cama"
+              ]
+            },
+            {
+              "option": "dosel",
+              "texts": [
+                "cama"
+              ]
+            },
+            {
+              "option": "plegable",
+              "texts": [
+                "cama",
+                "escritorio",
+                "silla"
+              ]
+            },
+            {
+              "option": "alta",
+              "texts": [
+                "cama"
+              ]
+            },
+            {
+              "option": "ajustable",
+              "texts": [
+                "cama",
+                "edredones"
+              ]
+            },
+            {
+              "option": "empotrado",
+              "texts": [
+                "armario"
+              ]
+            },
+            {
+              "option": "correderas",
+              "texts": [
+                "armario"
+              ]
+            },
+            {
+              "option": "espejo",
+              "texts": [
+                "armario",
+                "material"
+              ]
+            },
+            {
+              "option": "tela",
+              "texts": [
+                "armario"
+              ]
+            },
+            {
+              "option": "metal",
+              "texts": [
+                "armario",
+                "escritorio",
+                "silla",
+                "mesa de noche",
+                "material",
+                "relojes",
+                "revestimientos"
+              ]
+            },
+            {
+              "option": "vintage",
+              "texts": [
+                "armario",
+                "mesa de noche",
+                "estilo",
+                "lámparas de mesa",
+                "lámparas de techo",
+                "cuadros",
+                "cojines",
+                "relojes",
+                "espejos",
+                "papel pintado"
+              ]
+            },
+            {
+              "option": "modular",
+              "texts": [
+                "armario"
+              ]
+            },
+            {
+              "option": "esquina",
+              "texts": [
+                "armario"
+              ]
+            },
+            {
+              "option": "almacenaje",
+              "texts": [
+                "armario"
+              ]
+            },
+            {
+              "option": "almacenamiento",
+              "texts": [
+                "armario"
+              ]
+            },
+            {
+              "option": "vestidor",
+              "texts": [
+                "armario"
+              ]
+            },
+            {
+              "option": "cajones",
+              "texts": [
+                "armario",
+                "escritorio",
+                "mesa de noche"
+              ]
+            },
+            {
+              "option": "estantes",
+              "texts": [
+                "armario",
+                "mesa de noche"
+              ]
+            },
+            {
+              "option": "perchero",
+              "texts": [
+                "armario"
+              ]
+            },
+            {
+              "option": "madera",
+              "texts": [
+                "escritorio",
+                "silla",
+                "mesa de noche",
+                "material",
+                "relojes",
+                "papel pintado",
+                "revestimientos"
+              ]
+            },
+            {
+              "option": "vidrio",
+              "texts": [
+                "escritorio",
+                "mesa",
+                "material"
+              ]
+            },
+            {
+              "option": "esquinero",
+              "texts": [
+                "escritorio"
+              ]
+            },
+            {
+              "option": "computadora",
+              "texts": [
+                "escritorio"
+              ]
+            },
+            {
+              "option": "estudio",
+              "texts": [
+                "escritorio",
+                "silla",
+                "mesa",
+                "lámparas de mesa"
+              ]
+            },
+            {
+              "option": "juvenil",
+              "texts": [
+                "escritorio",
+                "edredones"
+              ]
+            },
+            {
+              "option": "niños",
+              "texts": [
+                "escritorio"
+              ]
+            },
+            {
+              "option": "estanterías",
+              "texts": [
+                "escritorio"
+              ]
+            },
+            {
+              "option": "luz",
+              "texts": [
+                "escritorio"
+              ]
+            },
+            {
+              "option": "escritorio",
+              "texts": [
+                "silla"
+              ]
+            },
+            {
+              "option": "oficina",
+              "texts": [
+                "silla"
+              ]
+            },
+            {
+              "option": "ergonómica",
+              "texts": [
+                "silla"
+              ]
+            },
+            {
+              "option": "gaming",
+              "texts": [
+                "silla"
+              ]
+            },
+            {
+              "option": "giratoria",
+              "texts": [
+                "silla"
+              ]
+            },
+            {
+              "option": "tapizada",
+              "texts": [
+                "silla"
+              ]
+            },
+            {
+              "option": "plástico",
+              "texts": [
+                "silla",
+                "material",
+                "relojes"
+              ]
+            },
+            {
+              "option": "acolchada",
+              "texts": [
+                "silla"
+              ]
+            },
+            {
+              "option": "sin brazos",
+              "texts": [
+                "silla"
+              ]
+            },
+            {
+              "option": "reposabrazos",
+              "texts": [
+                "silla"
+              ]
+            },
+            {
+              "option": "noche",
+              "texts": [
+                "mesa",
+                "lámparas de mesa"
+              ]
+            },
+            {
+              "option": "auxiliar",
+              "texts": [
+                "mesa",
+                "mesa de noche"
+              ]
+            },
+            {
+              "option": "ordenador",
+              "texts": [
+                "mesa"
+              ]
+            },
+            {
+              "option": "centro",
+              "texts": [
+                "mesa"
+              ]
+            },
+            {
+              "option": "comedor",
+              "texts": [
+                "mesa"
+              ]
+            },
+            {
+              "option": "extensible",
+              "texts": [
+                "mesa"
+              ]
+            },
+            {
+              "option": "redonda",
+              "texts": [
+                "mesa"
+              ]
+            },
+            {
+              "option": "cuadrada",
+              "texts": [
+                "mesa"
+              ]
+            },
+            {
+              "option": "ovalada",
+              "texts": [
+                "mesa"
+              ]
+            },
+            {
+              "option": "televisión",
+              "texts": [
+                "mesa"
+              ]
+            },
+            {
+              "option": "trabajo",
+              "texts": [
+                "mesa"
+              ]
+            },
+            {
+              "option": "diseño",
+              "texts": [
+                "mesa de noche",
+                "relojes"
+              ]
+            },
+            {
+              "option": "moderna",
+              "texts": [
+                "mesa de noche",
+                "lámparas de mesa",
+                "lámparas de techo"
+              ]
+            },
+            {
+              "option": "cristal",
+              "texts": [
+                "mesa de noche",
+                "lámparas de techo"
+              ]
+            },
+            {
+              "option": "ratán",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "forja",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "mármol",
+              "texts": [
+                "material",
+                "revestimientos"
+              ]
+            },
+            {
+              "option": "piedra",
+              "texts": [
+                "material",
+                "revestimientos"
+              ]
+            },
+            {
+              "option": "melamina",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "acero",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "blanco",
+              "texts": [
+                "color",
+                "suelo laminado"
+              ]
+            },
+            {
+              "option": "gris",
+              "texts": [
+                "color",
+                "suelo laminado"
               ]
             },
             {
@@ -132,40 +520,1016 @@
               "texts": [
                 "color"
               ]
-            }
-          ]
-        }
-      },
-      "tamaño": {
-        "entre": {
-          "name": "entre",
-          "type": "trim",
-          "rules": [
+            },
             {
-              "type": "between",
-              "leftWords": [
-                "y"
-              ],
-              "rightWords": [
-                null
-              ],
-              "regex": "/(?<= y )(.*)(?= undefined )/gi",
-              "options": {}
-            }
-          ]
-        }
-      },
-      "color": {
-        "de": {
-          "name": "de",
-          "type": "trim",
-          "rules": [
+              "option": "verde",
+              "texts": [
+                "color"
+              ]
+            },
             {
-              "type": "after",
-              "words": [
-                null
-              ],
-              "options": {}
+              "option": "amarillo",
+              "texts": [
+                "color"
+              ]
+            },
+            {
+              "option": "rojo",
+              "texts": [
+                "color"
+              ]
+            },
+            {
+              "option": "naranja",
+              "texts": [
+                "color"
+              ]
+            },
+            {
+              "option": "rosa",
+              "texts": [
+                "color"
+              ]
+            },
+            {
+              "option": "morado",
+              "texts": [
+                "color"
+              ]
+            },
+            {
+              "option": "negro",
+              "texts": [
+                "color",
+                "suelo laminado"
+              ]
+            },
+            {
+              "option": "marrón",
+              "texts": [
+                "color",
+                "suelo laminado"
+              ]
+            },
+            {
+              "option": "beige",
+              "texts": [
+                "color"
+              ]
+            },
+            {
+              "option": "moderno",
+              "texts": [
+                "estilo",
+                "cuadros",
+                "cojines",
+                "relojes",
+                "espejos"
+              ]
+            },
+            {
+              "option": "rústico",
+              "texts": [
+                "estilo"
+              ]
+            },
+            {
+              "option": "industrial",
+              "texts": [
+                "estilo",
+                "lámparas de mesa",
+                "lámparas de techo"
+              ]
+            },
+            {
+              "option": "bohemio",
+              "texts": [
+                "estilo"
+              ]
+            },
+            {
+              "option": "escandinavo",
+              "texts": [
+                "estilo"
+              ]
+            },
+            {
+              "option": "minimalista",
+              "texts": [
+                "estilo",
+                "lámparas de mesa",
+                "lámparas de techo",
+                "cuadros"
+              ]
+            },
+            {
+              "option": "retro",
+              "texts": [
+                "estilo"
+              ]
+            },
+            {
+              "option": "clásico",
+              "texts": [
+                "estilo"
+              ]
+            },
+            {
+              "option": "contemporáneo",
+              "texts": [
+                "estilo"
+              ]
+            },
+            {
+              "option": "ecléctico",
+              "texts": [
+                "estilo"
+              ]
+            },
+            {
+              "option": "nórdico",
+              "texts": [
+                "estilo",
+                "edredones"
+              ]
+            },
+            {
+              "option": "algodón",
+              "texts": [
+                "sábanas",
+                "cojines"
+              ]
+            },
+            {
+              "option": "seda",
+              "texts": [
+                "sábanas"
+              ]
+            },
+            {
+              "option": "estampadas",
+              "texts": [
+                "sábanas"
+              ]
+            },
+            {
+              "option": "lisas",
+              "texts": [
+                "sábanas"
+              ]
+            },
+            {
+              "option": "bordadas",
+              "texts": [
+                "sábanas"
+              ]
+            },
+            {
+              "option": "dibujos",
+              "texts": [
+                "sábanas"
+              ]
+            },
+            {
+              "option": "colores",
+              "texts": [
+                "sábanas",
+                "papel pintado"
+              ]
+            },
+            {
+              "option": "algodón egipcio",
+              "texts": [
+                "sábanas"
+              ]
+            },
+            {
+              "option": "lino",
+              "texts": [
+                "sábanas"
+              ]
+            },
+            {
+              "option": "franela",
+              "texts": [
+                "sábanas",
+                "cobertores"
+              ]
+            },
+            {
+              "option": "lana",
+              "texts": [
+                "cobertores",
+                "cojines"
+              ]
+            },
+            {
+              "option": "acolchado",
+              "texts": [
+                "cobertores"
+              ]
+            },
+            {
+              "option": "reversible",
+              "texts": [
+                "cobertores",
+                "edredones"
+              ]
+            },
+            {
+              "option": "plumón",
+              "texts": [
+                "cobertores"
+              ]
+            },
+            {
+              "option": "terciopelo",
+              "texts": [
+                "cobertores",
+                "cojines"
+              ]
+            },
+            {
+              "option": "microfibra",
+              "texts": [
+                "cobertores",
+                "edredones"
+              ]
+            },
+            {
+              "option": "eléctrico",
+              "texts": [
+                "cobertores"
+              ]
+            },
+            {
+              "option": "verano",
+              "texts": [
+                "cobertores",
+                "edredones"
+              ]
+            },
+            {
+              "option": "invierno",
+              "texts": [
+                "cobertores",
+                "edredones"
+              ]
+            },
+            {
+              "option": "ligero",
+              "texts": [
+                "cobertores"
+              ]
+            },
+            {
+              "option": "pesado",
+              "texts": [
+                "cobertores"
+              ]
+            },
+            {
+              "option": "borreguito",
+              "texts": [
+                "cobertores"
+              ]
+            },
+            {
+              "option": "estampados",
+              "texts": [
+                "cobertores"
+              ]
+            },
+            {
+              "option": "plumas",
+              "texts": [
+                "almohadas",
+                "edredones"
+              ]
+            },
+            {
+              "option": "viscoelástica",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "látex",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "fibra",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "cervical",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "antiácaros",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "ortopédica",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "terapéutica",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "embarazo",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "bebé",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "extrafirme",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "viaje",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "lactancia",
+              "texts": [
+                "almohadas"
+              ]
+            },
+            {
+              "option": "infantil",
+              "texts": [
+                "edredones",
+                "papel pintado"
+              ]
+            },
+            {
+              "option": "entretiempo",
+              "texts": [
+                "edredones"
+              ]
+            },
+            {
+              "option": "fino",
+              "texts": [
+                "edredones"
+              ]
+            },
+            {
+              "option": "grueso",
+              "texts": [
+                "edredones"
+              ]
+            },
+            {
+              "option": "regulable",
+              "texts": [
+                "lámparas de mesa",
+                "lámparas de techo"
+              ]
+            },
+            {
+              "option": "LED",
+              "texts": [
+                "lámparas de mesa",
+                "lámparas de techo"
+              ]
+            },
+            {
+              "option": "rústica",
+              "texts": [
+                "lámparas de mesa",
+                "lámparas de techo"
+              ]
+            },
+            {
+              "option": "clásica",
+              "texts": [
+                "lámparas de mesa",
+                "lámparas de techo"
+              ]
+            },
+            {
+              "option": "colgante",
+              "texts": [
+                "lámparas de techo",
+                "plantas"
+              ]
+            },
+            {
+              "option": "abstracto",
+              "texts": [
+                "cuadros",
+                "papel pintado"
+              ]
+            },
+            {
+              "option": "geométrico",
+              "texts": [
+                "cuadros",
+                "papel pintado"
+              ]
+            },
+            {
+              "option": "étnico",
+              "texts": [
+                "cuadros",
+                "cojines"
+              ]
+            },
+            {
+              "option": "naturaleza",
+              "texts": [
+                "cuadros"
+              ]
+            },
+            {
+              "option": "paisaje",
+              "texts": [
+                "cuadros"
+              ]
+            },
+            {
+              "option": "ciudad",
+              "texts": [
+                "cuadros"
+              ]
+            },
+            {
+              "option": "flores",
+              "texts": [
+                "cuadros",
+                "plantas",
+                "papel pintado"
+              ]
+            },
+            {
+              "option": "animales",
+              "texts": [
+                "cuadros"
+              ]
+            },
+            {
+              "option": "retrato",
+              "texts": [
+                "cuadros"
+              ]
+            },
+            {
+              "option": "acuarela",
+              "texts": [
+                "cuadros"
+              ]
+            },
+            {
+              "option": "decorativo",
+              "texts": [
+                "cojines",
+                "espejos"
+              ]
+            },
+            {
+              "option": "estampado",
+              "texts": [
+                "cojines"
+              ]
+            },
+            {
+              "option": "bordado",
+              "texts": [
+                "cojines"
+              ]
+            },
+            {
+              "option": "lentejuelas",
+              "texts": [
+                "cojines"
+              ]
+            },
+            {
+              "option": "piel",
+              "texts": [
+                "cojines"
+              ]
+            },
+            {
+              "option": "ganchillo",
+              "texts": [
+                "cojines"
+              ]
+            },
+            {
+              "option": "punto",
+              "texts": [
+                "cojines"
+              ]
+            },
+            {
+              "option": "interior",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "hojas verdes",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "suculenta",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "artificial",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "aire",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "maceta",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "macramé",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "sombra",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "exterior",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "interior resistente",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "interior fácil cuidar",
+              "texts": [
+                "plantas"
+              ]
+            },
+            {
+              "option": "pared",
+              "texts": [
+                "relojes",
+                "espejos"
+              ]
+            },
+            {
+              "option": "mesa",
+              "texts": [
+                "relojes"
+              ]
+            },
+            {
+              "option": "digital",
+              "texts": [
+                "relojes"
+              ]
+            },
+            {
+              "option": "analógico",
+              "texts": [
+                "relojes"
+              ]
+            },
+            {
+              "option": "despertador",
+              "texts": [
+                "relojes"
+              ]
+            },
+            {
+              "option": "grande",
+              "texts": [
+                "relojes"
+              ]
+            },
+            {
+              "option": "pulsera",
+              "texts": [
+                "relojes"
+              ]
+            },
+            {
+              "option": "cuerpo entero",
+              "texts": [
+                "espejos"
+              ]
+            },
+            {
+              "option": "pie",
+              "texts": [
+                "espejos"
+              ]
+            },
+            {
+              "option": "luces",
+              "texts": [
+                "espejos"
+              ]
+            },
+            {
+              "option": "mano",
+              "texts": [
+                "espejos"
+              ]
+            },
+            {
+              "option": "tocador",
+              "texts": [
+                "espejos"
+              ]
+            },
+            {
+              "option": "aumento",
+              "texts": [
+                "espejos"
+              ]
+            },
+            {
+              "option": "redondo",
+              "texts": [
+                "espejos"
+              ]
+            },
+            {
+              "option": "ovalado",
+              "texts": [
+                "espejos"
+              ]
+            },
+            {
+              "option": "baño",
+              "texts": [
+                "espejos"
+              ]
+            },
+            {
+              "option": "rayas",
+              "texts": [
+                "papel pintado"
+              ]
+            },
+            {
+              "option": "liso",
+              "texts": [
+                "papel pintado"
+              ]
+            },
+            {
+              "option": "mural",
+              "texts": [
+                "papel pintado"
+              ]
+            },
+            {
+              "option": "lisa",
+              "texts": [
+                "pintura"
+              ]
+            },
+            {
+              "option": "satinada",
+              "texts": [
+                "pintura"
+              ]
+            },
+            {
+              "option": "mate",
+              "texts": [
+                "pintura",
+                "suelo laminado"
+              ]
+            },
+            {
+              "option": "lavable",
+              "texts": [
+                "pintura"
+              ]
+            },
+            {
+              "option": "ecológica",
+              "texts": [
+                "pintura"
+              ]
+            },
+            {
+              "option": "antihumedad",
+              "texts": [
+                "pintura"
+              ]
+            },
+            {
+              "option": "anticondensación",
+              "texts": [
+                "pintura"
+              ]
+            },
+            {
+              "option": "antimoho",
+              "texts": [
+                "pintura"
+              ]
+            },
+            {
+              "option": "termosensible",
+              "texts": [
+                "pintura"
+              ]
+            },
+            {
+              "option": "ladrillo",
+              "texts": [
+                "revestimientos"
+              ]
+            },
+            {
+              "option": "PVC",
+              "texts": [
+                "revestimientos"
+              ]
+            },
+            {
+              "option": "hormigón",
+              "texts": [
+                "revestimientos"
+              ]
+            },
+            {
+              "option": "cerámica",
+              "texts": [
+                "revestimientos"
+              ]
+            },
+            {
+              "option": "corcho",
+              "texts": [
+                "revestimientos"
+              ]
+            },
+            {
+              "option": "poliestireno",
+              "texts": [
+                "revestimientos"
+              ]
+            },
+            {
+              "option": "bambú",
+              "texts": [
+                "revestimientos",
+                "tarima flotante"
+              ]
+            },
+            {
+              "option": "rgb(145,171,155)",
+              "texts": [
+                "rgb"
+              ]
+            },
+            {
+              "option": "rgb(75,183,178)",
+              "texts": [
+                "rgb"
+              ]
+            },
+            {
+              "option": "rgb(178,224,205)",
+              "texts": [
+                "rgb"
+              ]
+            },
+            {
+              "option": "laminado",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "parqué",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "madera maciza",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "baldosas",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "terrazo",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "cemento pulido",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "vinilo",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "tarima flotante",
+              "texts": [
+                "material"
+              ]
+            },
+            {
+              "option": "roble",
+              "texts": [
+                "suelo laminado",
+                "tarima flotante"
+              ]
+            },
+            {
+              "option": "claro",
+              "texts": [
+                "suelo laminado"
+              ]
+            },
+            {
+              "option": "oscuro",
+              "texts": [
+                "suelo laminado"
+              ]
+            },
+            {
+              "option": "ancho",
+              "texts": [
+                "suelo laminado"
+              ]
+            },
+            {
+              "option": "estrecho",
+              "texts": [
+                "suelo laminado"
+              ]
+            },
+            {
+              "option": "haya",
+              "texts": [
+                "tarima flotante"
+              ]
+            },
+            {
+              "option": "pino",
+              "texts": [
+                "tarima flotante"
+              ]
+            },
+            {
+              "option": "jatoba",
+              "texts": [
+                "tarima flotante"
+              ]
+            },
+            {
+              "option": "abedul",
+              "texts": [
+                "tarima flotante"
+              ]
+            },
+            {
+              "option": "nogal",
+              "texts": [
+                "tarima flotante"
+              ]
+            },
+            {
+              "option": "cerezo",
+              "texts": [
+                "tarima flotante"
+              ]
+            },
+            {
+              "option": "teca",
+              "texts": [
+                "tarima flotante"
+              ]
+            },
+            {
+              "option": "acacia",
+              "texts": [
+                "tarima flotante"
+              ]
+            },
+            {
+              "option": "autoadhesivo",
+              "texts": [
+                "suelo vinílico"
+              ]
+            },
+            {
+              "option": "rollo",
+              "texts": [
+                "suelo vinílico"
+              ]
+            },
+            {
+              "option": "losetas",
+              "texts": [
+                "suelo vinílico"
+              ]
+            },
+            {
+              "option": "imitación madera",
+              "texts": [
+                "suelo vinílico"
+              ]
+            },
+            {
+              "option": "imitación baldosa",
+              "texts": [
+                "suelo vinílico"
+              ]
+            },
+            {
+              "option": "imitación piedra",
+              "texts": [
+                "suelo vinílico"
+              ]
+            },
+            {
+              "option": "imitación cemento",
+              "texts": [
+                "suelo vinílico"
+              ]
+            },
+            {
+              "option": "imitación mármol",
+              "texts": [
+                "suelo vinílico"
+              ]
+            },
+            {
+              "option": "imitación hormigón",
+              "texts": [
+                "suelo vinílico"
+              ]
+            },
+            {
+              "option": "imitación terrazo",
+              "texts": [
+                "suelo vinílico"
+              ]
             }
           ]
         }

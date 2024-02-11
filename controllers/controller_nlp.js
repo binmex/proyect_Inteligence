@@ -1,23 +1,27 @@
 const { NlpManager } = require('node-nlp');
+const fs = require('fs');
 
 const manager = new NlpManager({ languages: ['es'] });
 
+const newEntities = JSON.parse(fs.readFileSync('helpers/entityPln.json', 'utf-8'));
 
-manager.addNamedEntityText('tamaño', 'grande', ['es'], 'tamaño');
-manager.addNamedEntityText('tamaño', 'pequeña', ['es'], 'tamaño');
-manager.addNamedEntityText('objeto', 'silla', ['es'], 'objeto');
-manager.addNamedEntityText('objeto', 'mesa', ['es'], 'objeto');
-manager.addNamedEntityText('color', 'rojo', ['es'], 'color');
-manager.addNamedEntityText('color', 'azul', ['es'], 'color');
-manager.addBetweenCondition('tamaño', 'entre', 'y');
-manager.addAfterCondition('color', 'de');
-
+newEntities.forEach(entidad => {
+    const { nombreEntidad, categorias } = entidad;
+    categorias.forEach((elemento) => {
+        let nameType = elemento.nombreTipo;
+        elemento.subcategorias.forEach(ele => {
+            let name = ele.nombre;
+            ele.valores.forEach(valor => {
+                manager.addNamedEntityText(nombreEntidad, valor, ['es'],name);
+            });
+        });
+    });
+});
 
 (async () => {
     await manager.train();
     manager.save();
 })();
-
 
 exports.processText = async (req, res) => {
     const { text } = req.body;
