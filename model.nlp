@@ -143,6 +143,12 @@
               ]
             },
             {
+              "option": "cama",
+              "texts": [
+                "cama"
+              ]
+            },
+            {
               "option": "empotrado",
               "texts": [
                 "armario"
