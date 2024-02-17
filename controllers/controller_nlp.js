@@ -29,26 +29,31 @@ exports.processText = async (req, res) => {
   let wordNoFound = [];
   let wordFound = [];
   try {
+    //normaliza osea pasa a minusculas borra puntos y comas 
     const result = normalizer.normalize(text); //retorna vector con palabras a buscar
 
 
     //const result2 = await analyzeSentiment(text);
     //console.log(result2);
 
-
+//remueve los articulos
     const final = stopwords.removeStopwords(token.tokenize(result, true)); //elimina palabras vacias con,el,a y tokeniza
 
     final.forEach((evaluar) => {
+      //guarda en varibale palabra eonctrada dentro del corpus
+      //en los valores del corpus busca un elemento donde la palabra del corpues igual a la palabra del prompt 
       let variable = corpus.values.find((element) => evaluar == element);
+      //si encuentra palabra entonces suma el contador encontrada 
       if (variable != undefined) {
         found += 1;
+        //se agrega al vector de palabras encontradas 
         wordFound.push(variable);
       } else {
         noFound += 1;
         wordNoFound.push(evaluar);
       }
     });
-
+//cuenta entre las palabras enocntradas por 100/el numero total de palabras en el prompt una vez hecho la normalizacion y la tokenizacion 
     const holgura = (found * 100) / final.length;
 
     //validamos que respuesta devolvemos
