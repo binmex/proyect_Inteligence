@@ -1,556 +1,336 @@
-[
-  {
-    "nombreEntidad": "dormitorio",
-    "categorias": [
-      {
-        "nombreTipo": "muebles",
-        "subcategorias": [
-          {
-            "nombre": "cama",
-            "valores": [
-              "individual",
-              "doble",
-              "nido",
-              "litera",
-              "sofá",
-              "dosel",
-              "plegable",
-              "alta",
-              "ajustable",
-              "cama"
-            ]
-          },
-          {
-            "nombre": "armario",
-            "valores": [
-              "empotrado",
-              "correderas",
-              "espejo",
-              "tela",
-              "metal",
-              "vintage",
-              "modular",
-              "esquina",
-              "almacenaje",
-              "almacenamiento",
-              "vestidor",
-              "cajones",
-              "estantes",
-              "perchero"
-            ]
-          },
-          {
-            "nombre": "escritorio",
-            "valores": [
-              "madera",
-              "metal",
-              "cajones",
-              "plegable",
-              "vidrio",
-              "esquinero",
-              "computadora",
-              "estudio",
-              "juvenil",
-              "niños",
-              "estanterías",
-              "luz"
-            ]
-          },
-          {
-            "nombre": "silla",
-            "valores": [
-              "escritorio",
-              "oficina",
-              "ergonómica",
-              "gaming",
-              "estudio",
-              "giratoria",
-              "plegable",
-              "tapizada",
-              "madera",
-              "plástico",
-              "acolchada",
-              "metal",
-              "sin brazos",
-              "reposabrazos"
-            ]
-          },
-          {
-            "nombre": "mesa",
-            "valores": [
-              "noche",
-              "auxiliar",
-              "ordenador",
-              "estudio",
-              "centro",
-              "comedor",
-              "extensible",
-              "redonda",
-              "cuadrada",
-              "ovalada",
-              "vidrio",
-              "televisión",
-              "trabajo"
-            ]
-          },
-          {
-            "nombre": "mesa de noche",
-            "valores": [
-              "auxiliar",
-              "diseño",
-              "vintage",
-              "moderna",
-              "madera",
-              "metal",
-              "cristal",
-              "cajones",
-              "estantes"
-            ]
-          }
-        ]
-      },
-      {
-        "nombreTipo": "mesas de noche",
-        "subcategorias": [
-          {
-            "nombre": "material",
-            "valores": [
-              "madera",
-              "metal",
-              "vidrio",
-              "plástico",
-              "ratán",
-              "forja",
-              "mármol",
-              "piedra",
-              "espejo",
-              "melamina",
-              "acero"
-            ]
-          },
-          {
-            "nombre": "color",
-            "valores": [
-              "blanco",
-              "gris",
-              "azul",
-              "verde",
-              "amarillo",
-              "rojo",
-              "naranja",
-              "rosa",
-              "morado",
-              "negro",
-              "marrón",
-              "beige"
-            ]
-          },
-          {
-            "nombre": "estilo",
-            "valores": [
-              "moderno",
-              "vintage",
-              "rústico",
-              "industrial",
-              "bohemio",
-              "escandinavo",
-              "minimalista",
-              "retro",
-              "clásico",
-              "contemporáneo",
-              "ecléctico",
-              "nórdico"
-            ]
-          }
-        ]
-      },
-      {
-        "nombreTipo": "ropa de cama",
-        "subcategorias": [
-          {
-            "nombre": "sábanas",
-            "valores": [
-              "algodón",
-              "seda",
-              "estampadas",
-              "lisas",
-              "bordadas",
-              "dibujos",
-              "colores",
-              "algodón egipcio",
-              "lino",
-              "franela"
-            ]
-          },
-          {
-            "nombre": "cobertores",
-            "valores": [
-              "lana",
-              "acolchado",
-              "reversible",
-              "plumón",
-              "terciopelo",
-              "franela",
-              "microfibra",
-              "eléctrico",
-              "verano",
-              "invierno",
-              "ligero",
-              "pesado",
-              "borreguito",
-              "estampados"
-            ]
-          },
-          {
-            "nombre": "almohadas",
-            "valores": [
-              "plumas",
-              "viscoelástica",
-              "látex",
-              "fibra",
-              "cervical",
-              "antiácaros",
-              "ortopédica",
-              "terapéutica",
-              "embarazo",
-              "bebé",
-              "extrafirme",
-              "viaje",
-              "lactancia"
-            ]
-          },
-          {
-            "nombre": "edredones",
-            "valores": [
-              "nórdico",
-              "ajustable",
-              "reversible",
-              "infantil",
-              "juvenil",
-              "plumas",
-              "microfibra",
-              "invierno",
-              "verano",
-              "entretiempo",
-              "fino",
-              "grueso"
-            ]
-          }
-        ]
-      },
-      {
-        "nombreTipo": "iluminación",
-        "subcategorias": [
-          {
-            "nombre": "lámparas de mesa",
-            "valores": [
-              "noche",
-              "estudio",
-              "regulable",
-              "LED",
-              "vintage",
-              "moderna",
-              "rústica",
-              "minimalista",
-              "industrial",
-              "clásica"
-            ]
-          },
-          {
-            "nombre": "lámparas de techo",
-            "valores": [
-              "moderna",
-              "vintage",
-              "cristal",
-              "colgante",
-              "LED",
-              "regulable",
-              "industrial",
-              "rústica",
-              "minimalista",
-              "clásica"
-            ]
-          }
-        ]
-      },
-      {
-        "nombreTipo": "decoración",
-        "subcategorias": [
-          {
-            "nombre": "cuadros",
-            "valores": [
-              "abstracto",
-              "moderno",
-              "vintage",
-              "minimalista",
-              "geométrico",
-              "étnico",
-              "naturaleza",
-              "paisaje",
-              "ciudad",
-              "flores",
-              "animales",
-              "retrato",
-              "acuarela"
-            ]
-          },
-          {
-            "nombre": "cojines",
-            "valores": [
-              "decorativo",
-              "étnico",
-              "moderno",
-              "vintage",
-              "estampado",
-              "bordado",
-              "lentejuelas",
-              "terciopelo",
-              "algodón",
-              "lana",
-              "piel",
-              "ganchillo",
-              "punto"
-            ]
-          },
-          {
-            "nombre": "plantas",
-            "valores": [
-              "interior",
-              "colgante",
-              "hojas verdes",
-              "flores",
-              "suculenta",
-              "artificial",
-              "aire",
-              "maceta",
-              "macramé",
-              "sombra",
-              "exterior",
-              "interior resistente",
-              "interior fácil cuidar"
-            ]
-          }
-        ]
-      },
-      {
-        "nombreTipo": "accesorios",
-        "subcategorias": [
-          {
-            "nombre": "relojes",
-            "valores": [
-              "pared",
-              "mesa",
-              "digital",
-              "analógico",
-              "despertador",
-              "vintage",
-              "moderno",
-              "madera",
-              "metal",
-              "plástico",
-              "diseño",
-              "grande",
-              "pulsera"
-            ]
-          },
-          {
-            "nombre": "espejos",
-            "valores": [
-              "pared",
-              "cuerpo entero",
-              "pie",
-              "luces",
-              "vintage",
-              "moderno",
-              "mano",
-              "tocador",
-              "aumento",
-              "decorativo",
-              "redondo",
-              "ovalado",
-              "baño"
-            ]
-          }
-        ]
-      },
-      {
-        "nombreTipo": "paredes",
-        "subcategorias": [
-          {
-            "nombre": "color",
-            "valores": [
-              "blanco",
-              "gris",
-              "azul",
-              "verde",
-              "amarillo",
-              "rojo",
-              "naranja",
-              "rosa",
-              "morado",
-              "negro",
-              "marrón",
-              "beige"
-            ]
-          },
-          {
-            "nombre": "papel pintado",
-            "valores": [
-              "rayas",
-              "flores",
-              "geométrico",
-              "vintage",
-              "infantil",
-              "liso",
-              "colores",
-              "abstracto",
-              "mural",
-              "madera"
-            ]
-          },
-          {
-            "nombre": "estilo",
-            "valores": [
-              "moderno",
-              "vintage",
-              "rústico",
-              "industrial",
-              "bohemio",
-              "escandinavo",
-              "minimalista",
-              "retro",
-              "clásico",
-              "contemporáneo",
-              "ecléctico",
-              "nórdico"
-            ]
-          },
-          {
-            "nombre": "pintura",
-            "valores": [
-              "lisa",
-              "satinada",
-              "mate",
-              "lavable",
-              "ecológica",
-              "antihumedad",
-              "anticondensación",
-              "antimoho",
-              "termosensible"
-            ]
-          },
-          {
-            "nombre": "revestimientos",
-            "valores": [
-              "madera",
-              "piedra",
-              "ladrillo",
-              "PVC",
-              "hormigón",
-              "cerámica",
-              "mármol",
-              "corcho",
-              "metal",
-              "poliestireno",
-              "bambú"
-            ]
-          }
-        ]
-      },
-      {
-        "nombreTipo": "tonalidades",
-        "subcategorias": [
-          {
-            "nombre": "rgb",
-            "valores": [
-              "rgb(145,171,155)",
-              "rgb(75,183,178)",
-              "rgb(178,224,205)"
-            ]
-          }
-        ]
-      },
-      {
-        "nombreTipo": "pisos",
-        "subcategorias": [
-          {
-            "nombre": "material",
-            "valores": [
-              "laminado",
-              "parqué",
-              "madera maciza",
-              "baldosas",
-              "terrazo",
-              "mármol",
-              "cemento pulido",
-              "vinilo",
-              "tarima flotante"
-            ]
-          },
-          {
-            "nombre": "color",
-            "valores": [
-              "blanco",
-              "gris",
-              "marrón",
-              "beige",
-              "negro",
-              "rojo",
-              "azul",
-              "verde",
-              "amarillo",
-              "naranja",
-              "rosa",
-              "morado"
-            ]
-          },
-          {
-            "nombre": "suelo laminado",
-            "valores": [
-              "gris",
-              "roble",
-              "blanco",
-              "negro",
-              "marrón",
-              "claro",
-              "oscuro",
-              "ancho",
-              "estrecho",
-              "mate"
-            ]
-          },
-          {
-            "nombre": "tarima flotante",
-            "valores": [
-              "roble",
-              "haya",
-              "pino",
-              "jatoba",
-              "abedul",
-              "nogal",
-              "cerezo",
-              "bambú",
-              "teca",
-              "acacia"
-            ]
-          },
-          {
-            "nombre": "suelo vinílico",
-            "valores": [
-              "autoadhesivo",
-              "rollo",
-              "losetas",
-              "imitación madera",
-              "imitación baldosa",
-              "imitación piedra",
-              "imitación cemento",
-              "imitación mármol",
-              "imitación hormigón",
-              "imitación terrazo"
-            ]
-          }
-        ]
-      }
-    ]
-  }
-]
+{
+  "values": [
+
+    "dormitorio",
+    "aposento",
+    "cama",
+    "camas",
+    "doble",
+    "sencilla",
+    "cuarto",
+    "alcoba",
+    "recamara",
+    "alojamiento",
+    "recamara",
+    "flores",
+    "flor",
+    "almohada",
+    "almohadas",
+    "edredon",
+    "edredones",
+    "sabana",
+    "sabanas",
+    "colchon",
+    "colchones",
+    "mesita",
+    "mesitas",
+    "lampara",
+    "lamparas",
+    "armario",
+    "armarios",
+    "perchero",
+    "percheros",
+    "espejo",
+    "espejos",
+    "ventana",
+    "ventanas",
+    "cortina",
+    "cortinas",
+    "alfombra",
+    "alfombras",
+    "escritorio",
+    "escritorios",
+    "silla",
+    "sillas",
+    "librero",
+    "libreros",
+    "television",
+    "televisores",
+    "control",
+    "controles",
+    "enchufe",
+    "enchufes",
+    "cable",
+    "cables",
+    "reloj",
+    "relojes",
+    "fonografo",
+    "fonografos",
+    "telefono",
+    "telefonos",
+    "computadora",
+    "computadoras",
+    "ventilador",
+    "ventiladores",
+    "calefaccion",
+    "aires",
+    "aire",
+    "termostato",
+    "termostatos",
+    "pintura",
+    "pinturas",
+    "cuadro",
+    "cuadros",
+    "poster",
+    "posters",
+    "marco",
+    "marcos",
+    "decoracion",
+    "decoraciones",
+    "estante",
+    "estantes",
+    "cajon",
+    "cajones",
+    "papel",
+    "tapiz",
+    "papelera",
+    "papeleras",
+    "planta",
+    "plantas",
+    "maceta",
+    "macetas",
+    "persiana",
+    "persianas",
+    "interruptor",
+    "interruptores",
+    "piso",
+    "pisos",
+    "pared",
+    "paredes",
+    "techo",
+    "techos",
+    "puerta",
+    "puertas",
+    "manija",
+    "manijas",
+    "llave",
+    "llaves",
+    "cerradura",
+    "cerraduras",
+    "cobija",
+    "cobijas",
+    "cobertor",
+    "caja",
+    "cajas",
+    "bandeja",
+    "bandejas",
+    "copa",
+    "copas",
+    "vaso",
+    "vasos",
+    "botella",
+    "botellas",
+    "almacenamiento",
+    "almacenamientos",
+    "concreto",
+    "yeso",
+    "ladrillo",
+    "vidrio",
+    "florero",
+    "floreros",
+    "fluorescente",
+    "colgante",
+    "ropero",
+    "sillon",
+    "sillones",
+    "mosquiteras",
+    "mosquiteros",
+    "purificador",
+    "purificadores",
+    "difusor",
+    "difusores",
+    "estilo",
+    "estilos",
+    "tapete",
+    "tapetes",
+    "zapatero",
+    "zapateros",
+    "abrigo",
+    "abrigos",
+    "sombrero",
+    "sombreros",
+    "paraguas",
+    "paraguas",
+    "gafas",
+    "gafas",
+    "joyero",
+    "joyeros",
+    "organizador",
+    "organizadores",
+    "placas",
+    "adhesivo",
+    "adhesivos",
+    "cable",
+    "cables",
+    "articulo",
+    "articulos",
+    "tablero",
+    "tableros",
+    "canasta",
+    "canastas",
+    "candelabro",
+    "candelabros",
+    "incienso",
+    "inciensos",
+    "humidificador",
+    "humidificadores",
+    "desodorante",
+    "desodorantes",
+    "botiquin",
+    "botiquines",
+    "almohadilla",
+    "almohadillas",
+    "comoda",
+    "comodas",
+    "funda",
+    "fundas",
+    "sabana",
+    "sabanas",
+    "almohada",
+    "almohadas",
+    "edredon",
+    "edredones",
+    "colchon",
+    "colchones",
+    "mesita",
+    "mesitas",
+    "lampara",
+    "lamparas",
+    "armario",
+    "armarios",
+    "perchero",
+    "percheros",
+    "espejo",
+    "espejos",
+    "ventana",
+    "ventanas",
+    "cortina",
+    "cortinas",
+    "alfombra",
+    "alfombras",
+    "escritorio",
+    "escritorios",
+    "silla",
+    "tocador",
+    "sillas",
+    "librero",
+    "libreros",
+    "television",
+    "televisores",
+    "soporte",
+    "soportes",
+    "mesa",
+    "mesas",
+    "sofa",
+    "sofas",
+    "cojin",
+    "cojines",
+    "manta",
+    "mantas",
+    "mecedora",
+    "mecedoras",
+    "taburete",
+    "taburetes",
+    "puf",
+    "pufs",
+    "biombo",
+    "biombos",
+    "estufa",
+    "estufas",
+    "radiador",
+    "radiadores",
+    "ventilador",
+    "ventiladores",
+    "aire",
+    "aires",
+    "plancha",
+    "planchas",
+    "tabla",
+    "tablas",
+    "basurero",
+    "basureros",
+    "reciclaje",
+    "bolsa",
+    "bolsas",
+    "producto",
+    "productos",
+    "toallita",
+    "toallitas",
+    "ambientador",
+    "ambientadores",
+    "esencia",
+    "esencias",
+    "habitacion",
+    "madera",
+    "noche",
+    "encima",
+    "debajo",
+    "dormitorio",
+    "gato",
+    "gatos",
+    "perro",
+    "perros",
+    "color",
+    "colores",
+    "ambientacion",
+    "ambientaciones",
+    "azul",
+    "blanca",
+    "blanco",
+    "amarillo",
+    "rojo",
+    "rosado",
+    "negro",
+    "negras",
+    "gris",
+    "cafe",
+    "izquierda",
+    "derecha",
+    "lado",
+    "moderno",
+    "modernos",
+    "rusticos",
+    "rustico",
+    "vintage",
+    "bohemio",
+    "industrial",
+    "glamuroso",
+    "clasica",
+    "clasico",
+    "minimalista",
+    "elegante",
+    "verde",
+    "morado",
+    "naranja",
+    "beige",
+    "turquesa",
+    "celeste",
+    "marron",
+    "plateado",
+    "dorado",
+    "crema",
+    "violeta",
+    "coral",
+    "marfil",
+    "borgoña",
+    "lavanda",
+    "aguamarina",
+    "esmeralda",
+    "indigo",
+    "terracota",
+    "purpura",
+    "terracota",
+    "perla",
+    "magenta",
+    "cian",
+    "topacio",
+    "zafiro",
+    "ambar"
+  
+    
+
+
+
+    
+  ]
+}
