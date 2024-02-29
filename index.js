@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express()
 
 //Setters
-app.set("PORT", process.env.PORT || 4001)
+app.set("PORT", process.env.PORT || 4000)
 
 //middelware
 app.use(express.json())
