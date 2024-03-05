@@ -7,7 +7,8 @@ exports.generateImage = async (req, res) => {
     const { data } = await sdk.generate({
       style_preset: '3d-model',
       prompt: prompUser,
-      model: 'Realistic_Vision_V5.0.safetensors [614d1063]'
+      model: 'Realistic_Vision_V5.0.safetensors [614d1063]',
+      //sampler: 'scacsacsacsca'
       //upscale: true, aspect_ratio: 'landscape'
     });
     const img = await retrieveGeneration(data.job);

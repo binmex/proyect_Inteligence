@@ -57,7 +57,7 @@ exports.processText = async (req, res) => {
     const holgura = (found * 100) / final.length;
 
     //validamos que respuesta devolvemos
-    if (holgura < 100) {
+    if (holgura < 70) {
       res.status(404).json({ state: false, data: wordNoFound });
     } else {
       res.status(200).json({ state: true, data: wordFound });
