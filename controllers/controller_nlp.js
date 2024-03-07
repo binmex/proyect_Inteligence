@@ -3,7 +3,7 @@ const { Container } = require("@nlpjs/core");
 const { SentimentAnalyzer } = require("@nlpjs/sentiment");
 const { LangEs } = require("@nlpjs/lang-es");
 const fs = require("fs");
-const corpus = JSON.parse(fs.readFileSync("../helpers/entityPln.json", "utf-8"));
+const corpus = JSON.parse(fs.readFileSync("./helpers/entityPln.json", "utf-8"));
 
 const normalizer = new NormalizerEs();
 const token = new TokenizerEs();
