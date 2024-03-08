@@ -1,5 +1,7 @@
 const sdk = require("api")("@prodia/v1.3.0#1jrnd16lrb6b1qn");
-sdk.auth("cff4ace1-210f-4528-a878-5aa21cef9f05");
+//e8af311f-0994-4f2e-b310-f20a6251a065
+//cff4ace1-210f-4528-a878-5aa21cef9f05
+sdk.auth("e8af311f-0994-4f2e-b310-f20a6251a065");
 
 exports.generateImage = async (req, res) => {
   const {prompUser} =  req.body
